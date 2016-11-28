@@ -53,7 +53,7 @@
 		var deviceID = "<<300019000447343337373738>>";
 		var accessToken = "<9687668ecddaf88b3521ef0df7243a8385e97f03>>";
 		var event_name = "GESTURE-EVENT";
-		var eventSource = new EventSource("https://api.spark.io/v1/devices/" + 300019000447343337373738 + "/events/?access_token=" + 9687668ecddaf88b3521ef0df7243a8385e97f03);
+		var eventSource = new EventSource("https://api.spark.io/v1/devices/" + deviceId + "/events/?access_token=" + accessToken);
 
 		eventSource.addEventListener('open', function(e) {
 			console.log("Opened!"); },false);
